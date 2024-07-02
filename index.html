@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carbon Footprint Calculator</title>
+    <style>
+        body {
+            background-color: #6a5acd; /* Blueish purple */
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            color: #ffffff;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 20px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Carbon Footprint Calculator</h1>
+    <form action="/result" method="post">
+        <label for="car_km">Enter the average kilometers you drive per week:</label>
+        <input type="text" id="car_km" name="car_km"><br><br>
+
+        <label for="bus_km">Enter the average kilometers you travel by bus per week:</label>
+        <input type="text" id="bus_km" name="bus_km"><br><br>
+
+        <label for="train_km">Enter the average kilometers you travel by train per week:</label>
+        <input type="text" id="train_km" name="train_km"><br><br>
+
+        <label for="flight_hours">Enter the average hours you fly per year:</label>
+        <input type="text" id="flight_hours" name="flight_hours"><br><br>
+
+        <label for="electricity_kwh">Enter your average monthly electricity usage in kWh:</label>
+        <input type="text" id="electricity_kwh" name="electricity_kwh"><br><br>
+
+        <label for="diet_choice">Select your diet type:</label><br>
+        <input type="radio" id="meat_diet" name="diet_choice" value="1">
+        <label for="meat_diet">Meat-based</label><br>
+        <input type="radio" id="vegetarian_diet" name="diet_choice" value="2">
+        <label for="vegetarian_diet">Vegetarian</label><br>
+        <input type="radio" id="vegan_diet" name="diet_choice" value="3">
+        <label for="vegan_diet">Vegan</label><br><br>
+
+        <label for="waste_kg">Enter the average kilograms of waste you produce per week:</label>
+        <input type="text" id="waste_kg" name="waste_kg"><br><br>
+
+        <input type="submit" value="Calculate">
+    </form>
+</body>
+</html>
