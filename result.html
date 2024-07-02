@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carbon Footprint Result</title>
+    <style>
+        body {
+            background-color: #6a5acd; /* Blueish purple */
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            color: #ffffff;
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Carbon Footprint Result</h1>
+    <p>Your annual carbon footprint is approximately {{ total_emissions }} kg CO2e.</p>
+    <p>To promote a healthier planet, the average annual carbon footprint per person should be around {{ target_emissions }} kg CO2e.</p>
+    <h2>Here are some measures you can take to reduce your carbon footprint:</h2>
+    <ul>
+        <li>Reduce car travel and opt for public transportation, biking, or walking when possible.</li>
+        <li>Minimize air travel or choose more sustainable flight options.</li>
+        <li>Improve home energy efficiency by using energy-efficient appliances and lighting.</li>
+        <li>Reduce, reuse, and recycle to minimize waste production.</li>
+    </ul>
+    <a href="/" class="button">Go back</a>
+</body>
+</html>
